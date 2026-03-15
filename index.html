@@ -173,25 +173,26 @@
   @media(max-width:680px){
     .sidebar{display:none;}
     .main{flex-direction:column;}
-    .video-zone{flex:1;min-height:0;}
-    .right-panel{width:100%;height:260px;flex-shrink:0;border-left:none;border-top:1px solid var(--border);display:flex;flex-direction:column;}
+    .video-zone{height:40vh;flex-shrink:0;}
+    .right-panel{width:100%;flex:1;border-left:none;border-top:1px solid var(--border);display:flex;flex-direction:column;min-height:0;}
     .panel-tabs{display:none;}
     .tab-panel{display:none!important;}
-    .tab-panel#tab-chat{display:flex!important;}
-    .chat-msgs{flex:1;padding:8px 10px;gap:6px;overflow-y:auto;}
+    .tab-panel#tab-chat{display:flex!important;flex-direction:column;flex:1;min-height:0;}
+    .chat-msgs{flex:1;padding:8px 10px;gap:6px;overflow-y:auto;min-height:0;}
     .msg-bubble{font-size:13px;padding:7px 11px;}
-    .chat-input-area{padding:8px 10px;flex-shrink:0;display:flex;}
-    .chat-input{font-size:14px;padding:8px 12px;}
-    .send-btn{width:38px;height:38px;flex-shrink:0;}
-    .reactions-row{padding:5px 10px;gap:4px;flex-shrink:0;}
-    .react-btn{font-size:18px;}
-    .typing-ind{padding:0 10px 3px;font-size:10px;min-height:14px;}
+    .typing-ind{padding:0 10px 2px;font-size:10px;min-height:14px;flex-shrink:0;}
+    .reactions-row{padding:5px 10px;gap:6px;flex-shrink:0;}
+    .react-btn{font-size:20px;padding:2px 5px;}
+    .chat-input-area{padding:8px 10px;flex-shrink:0;background:var(--surface);border-top:1px solid var(--border);display:flex;gap:8px;align-items:center;}
+    .chat-input{font-size:14px;padding:8px 12px;border-radius:50px;flex:1;}
+    .send-btn{width:38px;height:38px;font-size:16px;flex-shrink:0;}
     .controls{padding:6px 10px;}
     .ctrl-btn{width:28px;height:28px;font-size:12px;}
     .play-btn{width:34px!important;height:34px!important;}
     .vol-slider{width:50px;}
     header{padding:8px 12px;}
     .logo{font-size:15px;}
+    .btn-icon{width:30px;height:30px;font-size:12px;}
   }
 </style>
 </head>
